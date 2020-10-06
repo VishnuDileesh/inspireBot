@@ -8,10 +8,21 @@ client.on('ready', () => {
 })
 
 
+const prefix = "!"
+
 client.on('message', (msg) => {
-  if(msg.content === 'vi'){
-    msg.reply('nice')
+
+  if(msg.author.bot) return
+  if(!msg.content.startsWith(prefix)) return
+
+  const commandBody = msg.content.slice(prefix.length)
+
+  const command = commandBody.toLowerCase()
+
+  if(command === 'inspire'){
+    msg.reply('good')
   }
+
 })
 
 client.login(process.env.BOT_TOKEN)
