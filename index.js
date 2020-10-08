@@ -24,6 +24,16 @@ const quotes = [
   'You don’t learn to walk by following rules. You learn by doing and falling over',
   'High expectations are the key to everything.',
   'Trust your instincts.',
+  'You have to see failure as the beginning and the middle, but never entertain it as an end.',
+  'Don’t let others convince you that the idea is good when your gut tells you it’s bad.',
+  'If you can offer a free tier that provides a lot of value, it will naturally help your product to spread much more rapidly.',
+  'Do not focus on numbers. Focus on doing what you do best. It’s about building a community who want to visit your site every day because you create value and offer expertise.',
+  'Remain self-funded as long as possible.',
+  'All our dreams can come true, if we have the courage to pursue them.',
+  'Tough times never last, but tough people do.',
+  'Don’t worry about being successful but work toward being significant and the success will naturally follow.',
+  'The way to get started is to quit talking and begin doing.',
+  'A ship in the harbor is safe, but that is not what ships are built for.',
   'Your most unhappy customers are your greatest source of learning.'
 ]
 
