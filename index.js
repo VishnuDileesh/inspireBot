@@ -95,5 +95,13 @@ client.on('message', (msg) => {
 
 })
 
+
+const fastify = require('fastify')()
+
+fastify.post('/', (request, reply) => {
+  client.login(process.env.BOT_TOKEN)
+  reply.send({msg: 'done'})
+})
+
 client.login(process.env.BOT_TOKEN)
 
