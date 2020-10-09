@@ -98,6 +98,11 @@ client.on('message', (msg) => {
 
 const fastify = require('fastify')()
 
+// Declare a route
+fastify.get('/', (request, reply) => {
+  reply.send({ hello: 'world'  })
+  })
+
 fastify.post('/', (request, reply) => {
   client.login(process.env.BOT_TOKEN)
   reply.send({msg: 'done'})
@@ -105,3 +110,8 @@ fastify.post('/', (request, reply) => {
 
 client.login(process.env.BOT_TOKEN)
 
+
+fastify.listen(3000, (err, address) => {
+  if(err) throw err
+  fastify.log.info(`Server listening on address ${address}`)
+})
